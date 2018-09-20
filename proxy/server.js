@@ -12,16 +12,16 @@ app.listen(port, () => {
 
 
 app.get('/api/restaurants/:restaurantId/overview', function (req, res) {
-    let redirectUrl = `http://localhost:8008${req.url}`;
+    let redirectUrl = `http://localhost:8008/api/restaurants/${req.params.restaurantId/overview}`;
     res.redirect(redirectUrl);
 });
 
 app.get('/api/restaurants/:restaurantId/photos', function (req, res) {
-    let redirectUrl = `http://localhost:3005${req.url}`;
+    let redirectUrl = `http://localhost:3005/api/restaurants/${req.params.restaurantId}/photos`;
     res.redirect(redirectUrl);
 });
 
 app.get('/api/restaurants/:restaurantId/reviews', function (req, res) {
-    let redirectUrl = `http://localhost:1337${req.url}`;
+    let redirectUrl = `http://localhost:1337/api/restaurants/${req.params.restaurantId}/reviews`;
     res.redirect(redirectUrl);
 });
