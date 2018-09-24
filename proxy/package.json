@@ -4,7 +4,8 @@
   "description": "Proxy server for DropTable",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./server.js"
+    "start": "nodemon ./server.js",
+    "webpack": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,13 @@
   "homepage": "https://github.com/drop-table-reservations/proxy-daniel#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0"
   }
 }
